@@ -5,7 +5,7 @@ updates:
     directory: "/"
     schedule:
       interval: "monthly"
-    open-pull-requests-limit: 5
+    open-pull-requests-limit: 10
     groups:
       github-actions-minor-patch:
         update-types:
@@ -16,7 +16,7 @@ updates:
     directory: "/harness"
     schedule:
       interval: "monthly"
-    open-pull-requests-limit: 5
+    open-pull-requests-limit: 10
     groups:
       pip-minor-patch:
         update-types:
