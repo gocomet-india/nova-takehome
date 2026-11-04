@@ -70,6 +70,7 @@ jobs:
       contents: read
     uses: gocomet-india/.github/.github/workflows/sonarqube.yml@main
     with:
+      runs_on: ovh-app-runner-cpu
       quality_gate: ${{ vars.SONAR_QUALITY_GATE != 'false' }}
       branch_analysis: ${{ vars.SONAR_BRANCH_ANALYSIS == 'true' }}
       # Extra scanner flags (sources, exclusions, coverage paths) go in `args`, e.g.
